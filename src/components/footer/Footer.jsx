@@ -3,9 +3,12 @@ import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/f
 import logo from "../../assets/logo.png"
 
 import './footer.css'
+
 const Footer = () => {
   return (
     <div>
+
+     
       <footer className="footer">
       <div className="footer-content">
         <div className="footer-brand">
@@ -68,6 +71,7 @@ const Footer = () => {
         Webflow
       </div>
     </footer>
+
     </div>
   )
 }

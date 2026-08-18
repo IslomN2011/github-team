@@ -1,9 +1,15 @@
+
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+
 import './header.css'
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png"
 import { CiSearch } from "react-icons/ci";
 const Header = () => {
   return (
+
       <div className="container1">
       <header className="header">
         <nav className="navbar">
@@ -22,6 +28,7 @@ const Header = () => {
             <li>
               <Link to="/about">About</Link>
             </li>
+
 
             <li>
               <Link to="/services">Services</Link>

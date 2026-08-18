@@ -1,3 +1,4 @@
+
 import "./Home.css"
 import Footer from "../../components/footer/Footer";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -22,8 +23,8 @@ const Home = () => {
       <section className="hero">
         <div
           className="hero-img"
-          style={{ backgroundImage: `url(${background1})` }}
-        >
+          style={{ backgroundImage: `url(${background1})` }} >
+       
           <div className="container">
             <div className="hero-text">
               <h1>
@@ -179,6 +180,7 @@ const Home = () => {
           to make a type book.
         </p>
       </div>
+
 
       <div className="testimonial-card">
         <div className="user">
