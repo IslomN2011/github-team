@@ -1,10 +1,4 @@
-
-import React from 'react'
-import './Contact.css'
-
-const Contact = () => {
-  return (
-    <div>
+  
    
   
 
@@ -67,25 +61,7 @@ function Contact() {
 
   return (
     <div className="contact-page">
-      <nav className="navbar">
-        <Link to="/" className="brand">
-          <img src={logo} alt="Interno" className="logo" />
-          <span className="brand-name">Interno</span>
-        </Link>
-        <ul className="nav-links">
-          {navItems.map((item) => (
-            <li key={item.label}>
-              <Link
-                to={item.to}
-                className={item.label === "Contact" ? "active" : ""}
-              >
-                {item.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-        <FaSearch className="search-icon" />
-      </nav>
+     
 
       <section className="hero" style={{ backgroundImage: `url(${heroBg})` }}>
         <div className="hero-card">
@@ -147,57 +123,9 @@ function Contact() {
         </div>
       </section>
 
-      <footer className="footer">
-        <div className="footer-brand">
-          <Link to="/" className="brand">
-            <img src={logo} alt="Interno" className="logo" />
-            <span className="brand-name">Interno</span>
-          </Link>
-          <p>
-            It is a long established fact that a reader will be distracted
-            by looking.
-          </p>
-          <div className="social-icons">
-            {socialLinks.map((social, index) => (
-              <a key={index} href={social.href} className="social-icon">
-                {social.icon}
-              </a>
-            ))}
-          </div>
-        </div>
-
-        <div className="footer-col">
-          <h4>Pages</h4>
-          <ul>
-            {pages.map((page, index) => (
-              <li key={index}>{page}</li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="footer-col">
-          <h4>Services</h4>
-          <ul>
-            {services.map((service, index) => (
-              <li key={index}>{service}</li>
-            ))}
-          </ul>
-        </div>
-
-        <div className="footer-col">
-          <h4>Contact</h4>
-          <p>55 East Birchwood Ave, Brooklyn, New York 11201</p>
-          <p>contact@interno.com</p>
-          <p>(123) 456 - 7890</p>
-        </div>
-      </footer>
-
-      <div className="copyright">
-        Copyright © Interno | Designed by VictorFlow Templates - Powered by Webflow
-      </div>
+      
     </div>
   );
-
 }
 
 export default Contact;

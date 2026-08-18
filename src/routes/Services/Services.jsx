@@ -22,6 +22,5 @@ const Services = () => {
     </div>
   );
 };
->>>>>>> main
 
 export default Services;
