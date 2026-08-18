@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+.contact-page {
+  font-family: "Poppins", "Segoe UI", Arial, sans-serif;
+  color: #1a1a1a;
+  background: #fff;
+  overflow-x: hidden;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 5;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+.logo {
+  height: 26px;
+  width: auto;
+  max-width: 100%;
+}
+
+.brand-name {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.2px;
+  color: #1a1a1a;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 34px;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #2b2b2b;
+  font-weight: 400;
+  transition: color 0.15s ease;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #e8821c;
+}
+
+.search-icon {
+  font-size: 15px;
+  color: #2b2b2b;
+  cursor: pointer;
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.hero-card {
+  background: #fff;
+  padding: 38px 70px 32px;
+  text-align: center;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.1);
+  border-radius: 10px 10px 0 0;
+  transform: translateY(45%);
+  min-width: 300px;
+}
+
+.hero-card h1 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  font-size: 30px;
+  margin: 0 0 8px;
+  color: #17181a;
+}
+
+.breadcrumb {
+  font-size: 13px;
+  color: #9a9a9a;
+  margin: 0;
+}
+
+/* ---------- Intro ---------- */
+.intro {
+  text-align: center;
+  padding: 140px 20px 60px;
+}
+
+.intro h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  font-weight: 700;
+  font-size: 30px;
+  max-width: 480px;
+  margin: 0 auto;
+  line-height: 1.45;
+  color: #17181a;
+}
+
+/* ---------- Contact body ---------- */
+.contact-body {
+  display: flex;
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto 70px;
+  padding: 0 20px;
+}
+
+.info-card {
+  background: #f5f0ea;
+  border-radius: 10px;
+  padding: 36px 28px;
+  width: 260px;
+  flex-shrink: 0;
+  height: fit-content;
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 26px;
+}
+
+.info-list li {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 22px;
+  font-size: 13.5px;
+  color: #333;
+}
+
+.info-list li:last-child {
+  margin-bottom: 0;
+}
+
+.info-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  background: #fff;
+  border-radius: 50%;
+  color: #e8821c;
+  font-size: 13px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.social-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.social-icon {
+  color: #1a1a1a;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.15s ease;
+}
+
+.social-icon:hover {
+  color: #e8821c;
+}
+
+.contact-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 24px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  flex: 1;
+  border: none;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 10px 4px;
+  font-size: 14px;
+  font-family: inherit;
+  color: #1a1a1a;
+  outline: none;
+  resize: none;
+  background: transparent;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #9a9a9a;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-bottom-color: #1a1a1a;
+}
+
+.send-btn {
+  align-self: flex-end;
+  background: #1c1d20;
+  color: #fff;
+  border: none;
+  padding: 13px 30px;
+  border-radius: 30px;
+  font-size: 13.5px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.send-btn:hover {
+  background: #e8821c;
+}
+
+/* ---------- Map ---------- */
+.map {
+  max-width: 1000px;
+  margin: 0 auto 70px;
+  padding: 0 20px;
+}
+
+.map-box {
+  height: 260px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 22%;
+}
+
+.map-pin {
+  color: #e8b26f;
+  font-size: 28px;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.35));
+}
+
+/* ---------- Footer ---------- */
+.footer {
+  background: #fff;
+  border-top: 1px solid #eee;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px 40px;
+  display: flex;
+  gap: 60px;
+}
+
+.footer-brand {
+  max-width: 220px;
+}
+
+.footer-brand .brand-name {
+  font-size: 18px;
+}
+
+.footer-brand p {
+  font-size: 13px;
+  color: #777;
+  line-height: 1.6;
+  margin: 15px 0;
+}
+
+.footer-col h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 14.5px;
+  margin: 0 0 18px;
+  color: #17181a;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-col li {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+.footer-col p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  padding: 20px 0 50px;
+  border-top: 1px solid #f2f2f2;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 900px) {
+  .navbar {
+    padding: 18px 24px;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .nav-links {
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .contact-body {
+    flex-direction: column;
+  }
+
+  .info-card {
+    width: auto;
+  }
+
+  .footer {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .map-box {
+    padding-left: 12%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-card {
+    padding: 28px 30px 24px;
+    min-width: unset;
+    width: 85%;
+  }
+
+  .intro h2 {
+    font-size: 24px;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

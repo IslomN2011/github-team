@@ -1,3 +1,4 @@
+
 import React from 'react'
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa'
 import photo5 from '../../assets/photo5.png'
@@ -5,6 +6,7 @@ import photo6 from '../../assets/photo6.png'
 import photo7 from '../../assets/photo7.png'
 import photo8 from '../../assets/photo8.png'
 import photo9 from '../../assets/photo9.png'
+
 import './about.css'
 
 const About = () => {
