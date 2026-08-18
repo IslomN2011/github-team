@@ -1,4 +1,3 @@
-import React from 'react'
 import Header from './components/header/header'
 import { Route, Routes } from 'react-router-dom'
 import Home from './routes/home/Home'
@@ -16,6 +15,9 @@ const App = () => {
         <Route path='/services' element={<Services />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
+
+      <Footer />
+
     </div>
   )
 }
