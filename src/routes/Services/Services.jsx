@@ -1,14 +1,15 @@
-import './services.css'
+import BgImg from './componentA/bgImg/BgImg'
+import Join from './componentA/Join/Join'
+import Types from './componentA/Types/Types'
+import Work from './componentA/Work/Work'
 const Services = () => {
 	return (
-		<main>
-			<div className='imgServices'>
-				<div className='imgText'>
-					<h1>Services</h1>
-					<p>Home/Services</p>
-				</div>
-			</div>
-		</main>
+		<div>
+			<BgImg/>
+			<Types/>
+			<Work/>
+			<Join/>
+		</div>
 	)
 }
 
