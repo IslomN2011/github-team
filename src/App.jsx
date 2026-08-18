@@ -1,5 +1,4 @@
 import Header from './components/header/header'
-import Footer from './components/footer/Footer'
 import { Route, Routes } from 'react-router-dom'
 import Home from './routes/home/Home'
 import About from './routes/about/About'
@@ -16,7 +15,9 @@ const App = () => {
         <Route path='/services' element={<Services />} />
         <Route path='/contact' element={<Contact />} />
       </Routes>
+
       <Footer />
+
     </div>
   )
 }
